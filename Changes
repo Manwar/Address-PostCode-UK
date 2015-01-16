@@ -1,5 +1,10 @@
 Revision history for Address-PostCode-UK
 
+0.07  2015-01-16T14:30:00+01:00
+      - Removed SIGNATURE file.
+      - Updated MANIFEST.SKIP file to ignore folder 'eumm/'.
+      - Updated Copyright year information.
+
 0.06  2014-11-03T22:40:45+01:00
       - Checking the US post code format.
       - Added test case for UK post code format.

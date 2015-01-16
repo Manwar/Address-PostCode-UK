@@ -1,6 +1,6 @@
 package Address::PostCode::UK::Place::Ward;
 
-$Address::PostCode::UK::Place::Ward::VERSION = '0.06';
+$Address::PostCode::UK::Place::Ward::VERSION = '0.07';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Address::PostCode::UK::Place::Ward - Placeholder for 'ward' of the Address::Post
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
@@ -75,7 +75,7 @@ L<http://search.cpan.org/dist/Address-PostCode-UK/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2014 Mohammad S Anwar.
+Copyright (C) 2014 - 2015 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
