@@ -6,6 +6,7 @@ lib/Address/PostCode/UK/Place/Council.pm
 lib/Address/PostCode/UK/Place/Geo.pm
 lib/Address/PostCode/UK/Place/Ward.pm
 Makefile.PL
+LICENSE
 MANIFEST
 MANIFEST.SKIP
 README

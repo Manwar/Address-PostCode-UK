@@ -1,3 +1,5 @@
+#!/usr/bin/perl
+
 use 5.006;
 use strict;
 use warnings FATAL => 'all';
@@ -21,7 +23,7 @@ WriteMakefile(
         'JSON'             => 0,
         'Moo'              => 0,
         'namespace::clean' => 0,
-        'Address::PostCode::UserAgent' => '0.02',
+        'Address::PostCode::UserAgent' => '0.04',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Address-PostCode-UK-*' },
