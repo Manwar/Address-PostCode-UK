@@ -1,5 +1,8 @@
 Revision history for Address-PostCode-UK
 
+0.09  2015-05-07T10:10:00+01:00
+      - Upgraded to use Address::PostCode::UserAgent 0.05.
+
 0.08  2015-03-14T23:25:00+01:00
       - Upgraded to use Address::PostCode::UserAgent 0.04.
       - Added LICENSE file.

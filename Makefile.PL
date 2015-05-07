@@ -23,7 +23,7 @@ WriteMakefile(
         'JSON'             => 0,
         'Moo'              => 0,
         'namespace::clean' => 0,
-        'Address::PostCode::UserAgent' => '0.04',
+        'Address::PostCode::UserAgent' => '0.05',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Address-PostCode-UK-*' },
