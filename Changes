@@ -1,5 +1,9 @@
 Revision history for Address-PostCode-UK
 
+0.10  2015-05-09T21:20:00+01:00
+      - Added method nearest() to the package Address::PostCode::UK.
+      - Added new package Address::PostCode::UK::Location.
+
 0.09  2015-05-07T10:10:00+01:00
       - Upgraded to use Address::PostCode::UserAgent 0.05.
 

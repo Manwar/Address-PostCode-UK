@@ -1,5 +1,6 @@
 Changes
 lib/Address/PostCode/UK.pm
+lib/Address/PostCode/UK/Location.pm
 lib/Address/PostCode/UK/Place.pm
 lib/Address/PostCode/UK/Place/Constituency.pm
 lib/Address/PostCode/UK/Place/Council.pm

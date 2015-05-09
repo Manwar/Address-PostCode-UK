@@ -1,10 +1,10 @@
-package Address::PostCode::UK::Place::Constituency;
+package Address::PostCode::UK::Location;
 
-$Address::PostCode::UK::Place::Constituency::VERSION = '0.10';
+$Adress::PostCode::UK::Location::VERSION = '0.10';
 
 =head1 NAME
 
-Address::PostCode::UK::Place::Constituency - Placeholder for 'constituency' of the Address::PostCode::UK::Place.
+Address::PostCode::UK::Location - Represent 'location' for Address::PostCode::UK.
 
 =head1 VERSION
 
@@ -18,17 +18,23 @@ use Data::Dumper;
 use Moo;
 use namespace::clean;
 
-has 'title' => (is => 'ro');
-has 'uri'   => (is => 'ro');
-has 'code'  => (is => 'ro');
+has 'lat'      => (is => 'ro');
+has 'lng'      => (is => 'ro');
+has 'distance' => (is => 'ro');
+has 'postcode' => (is => 'ro');
+has 'uri'      => (is => 'ro');
 
 =head1 METHODS
 
-=head2 title()
+=head2 lat()
+
+=head2 lng()
+
+=head2 distance()
+
+=head2 postcode()
 
 =head2 uri()
-
-=head2 code()
 
 =head1 AUTHOR
 
@@ -49,7 +55,7 @@ bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Address::PostCode::UK::Place::Constituency
+    perldoc Address::PostCode::UK::Location
 
 You can also look for information at:
 
@@ -113,4 +119,4 @@ OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Address::PostCode::UK::Place::Constituency
+1; # End of Address::PostCode::UK::Location

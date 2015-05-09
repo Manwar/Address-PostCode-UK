@@ -1,6 +1,6 @@
 package Address::PostCode::UK;
 
-$Address::PostCode::UK::VERSION = '0.09';
+$Address::PostCode::UK::VERSION = '0.10';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Address::PostCode::UK - Interface to the UK PostCode.
 
 =head1 VERSION
 
-Version 0.09
+Version 0.10
 
 =cut
 
@@ -16,6 +16,7 @@ use 5.006;
 use JSON;
 use Data::Dumper;
 use Address::PostCode::UserAgent;
+use Address::PostCode::UK::Location;
 use Address::PostCode::UK::Place;
 use Address::PostCode::UK::Place::Geo;
 use Address::PostCode::UK::Place::Ward;
@@ -80,6 +81,46 @@ sub details {
 
     return Address::PostCode::UK::Place->new(
         'geo' => $geo, 'ward' => $ward, 'council' => $council, 'constituency' => $constituency);
+}
+
+=head2 nearest()
+
+It returns ref to a list of objects of type L<Address::PostCode::UK::Location> on
+success. The required parameters are the post code and distance in miles.
+
+    use strict; use warnings;
+    use Address::PostCode::UK;
+
+    my $address   = Address::PostCode::UK->new;
+    my $post_code = 'Post Code';
+    my $distance  = 1;
+    my $locations = $address->nearest($post_code, $distance);
+
+    print "Location Latitude : ", $locations->[0]->lat, "\n";
+    print "Location Longitude: ", $locations->[0]->lng, "\n";
+
+=cut
+
+sub nearest {
+    my ($self, $post_code, $distance) = @_;
+
+    die "ERROR: Missing required param 'post code'.\n" unless defined $post_code;
+    die "ERROR: Missing required param 'distance'.\n"  unless defined $distance;
+
+    die "ERROR: Invalid format for UK post code [$post_code].\n" unless ($post_code =~ /[A-Z]{1,2}[0-9][0-9A-Z]?\s?[0-9][A-Z]{2}/gi);
+    die "ERROR: Invalid distance [$distance].\n" unless ($distance =~ /^[\d+]$/);
+
+    $post_code =~ s/\s//g;
+    my $url      = sprintf("%s/postcode/nearest?postcode=%s&miles=%d&format=json", $BASE_URL, $post_code, $distance);
+    my $response = $self->get($url);
+    my $contents = from_json($response->{'content'});
+
+    my $locations = [];
+    foreach (@$contents) {
+        push @$locations, Address::PostCode::UK::Location->new($_);
+    }
+
+    return $locations;
 }
 
 =head1 AUTHOR

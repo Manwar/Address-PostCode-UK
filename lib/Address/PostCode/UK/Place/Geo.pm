@@ -1,6 +1,6 @@
 package Address::PostCode::UK::Place::Geo;
 
-$Adress::PostCode::UK::Place::Geo::VERSION = '0.09';
+$Adress::PostCode::UK::Place::Geo::VERSION = '0.10';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Address::PostCode::UK::Place::Geo - Placeholder for 'geo' of the Address::PostCo
 
 =head1 VERSION
 
-Version 0.09
+Version 0.10
 
 =cut
 
