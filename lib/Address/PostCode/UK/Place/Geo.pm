@@ -1,6 +1,7 @@
 package Address::PostCode::UK::Place::Geo;
 
-$Adress::PostCode::UK::Place::Geo::VERSION = '0.10';
+$Adress::PostCode::UK::Place::Geo::VERSION   = '0.11';
+$Adress::PostCode::UK::Place::Geo::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
 
@@ -8,7 +9,7 @@ Address::PostCode::UK::Place::Geo - Placeholder for 'geo' of the Address::PostCo
 
 =head1 VERSION
 
-Version 0.10
+Version 0.11
 
 =cut
 
@@ -42,7 +43,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Address-PostCode-UK>
+L<https://github.com/manwar/Address-PostCode-UK>
 
 =head1 BUGS
 

@@ -11,7 +11,6 @@ WriteMakefile(
     VERSION_FROM       => 'lib/Address/PostCode/UK.pm',
     ABSTRACT_FROM      => 'lib/Address/PostCode/UK.pm',
     LICENSE            => 'artistic_2',
-    PL_FILES           => {},
     MIN_PERL_VERSION   => 5.006,
     CONFIGURE_REQUIRES => {
         'ExtUtils::MakeMaker' => 0,
@@ -32,8 +31,8 @@ WriteMakefile(
         resources => {
             repository => {
                 type => 'git',
-                url  => 'https://github.com/Manwar/Address-PostCode-UK.git',
-                web  => 'https://github.com/Manwar/Address-PostCode-UK',
+                url  => 'https://github.com/manwar/Address-PostCode-UK.git',
+                web  => 'https://github.com/manwar/Address-PostCode-UK',
             },
         }})
      : ()

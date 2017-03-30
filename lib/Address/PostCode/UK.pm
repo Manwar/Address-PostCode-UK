@@ -1,6 +1,7 @@
 package Address::PostCode::UK;
 
-$Address::PostCode::UK::VERSION = '0.10';
+$Address::PostCode::UK::VERSION   = '0.11';
+$Address::PostCode::UK::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
 
@@ -8,7 +9,7 @@ Address::PostCode::UK - Interface to the UK PostCode.
 
 =head1 VERSION
 
-Version 0.10
+Version 0.11
 
 =cut
 
@@ -129,7 +130,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Address-PostCode-UK>
+L<https://github.com/manwar/Address-PostCode-UK>
 
 =head1 BUGS
 

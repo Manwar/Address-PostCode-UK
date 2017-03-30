@@ -1,4 +1,8 @@
-Revision history for Address-PostCode-UK
+Revision history for Address::PostCode::UK
+
+0.11  2017-03-30T12:30:00+01:00
+      - Tidied up test scripts and removed "-T" switch.
+      - Added $AUTHORITY to the packages.
 
 0.10  2015-05-09T21:20:00+01:00
       - Added method nearest() to the package Address::PostCode::UK.
