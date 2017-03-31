@@ -1,5 +1,8 @@
 Revision history for Address::PostCode::UK
 
+0.12  2017-03-31T16:40:00+01:00
+      - Added key 'provides' to the Makefile.PL script.
+
 0.11  2017-03-30T12:30:00+01:00
       - Tidied up test scripts and removed "-T" switch.
       - Added $AUTHORITY to the packages.
