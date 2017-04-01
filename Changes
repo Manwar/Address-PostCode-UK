@@ -1,5 +1,9 @@
 Revision history for Address::PostCode::UK
 
+0.13  2017-04-01T02:55:00+01:00
+      - Added test scripts (t/meta-json.t and t/meta-yml.t).
+      - Fixed typo in the package version.
+
 0.12  2017-03-31T16:40:00+01:00
       - Added key 'provides' to the Makefile.PL script.
 

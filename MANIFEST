@@ -17,3 +17,5 @@ t/02-address-postcode-uk-place.t
 t/manifest.t
 t/pod.t
 t/changes.t
+t/meta-json.t
+t/meta-yml.t
